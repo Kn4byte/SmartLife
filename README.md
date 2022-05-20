@@ -10,6 +10,7 @@ Es un proyecto ficticio basado en el concepto de Ciudades Inteligentes.
 ## Roadmap
 
 - WEB
+
 La estructura de la WEB es la siguiente:
 ```
 ├── index.html
