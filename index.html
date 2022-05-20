@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <title>SmartLife Corp</title>
+</head>
+<body>
+
+    <div id="preloder">
+    </div>
+
+    <script>
+        // preloader
+        document.getElementById("preloader").style.display = "block";
+        setTimeout(function(){
+            document.getElementById("preloader").style.display = "none";
+        }, 2500);
+    </script>
+
+    <header>
+        <section class="container_menu">
+            <div class="logo">
+                <img src="src/img/logo_smartLife.png" alt="">
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a id="selected" href="#inicio">Inicio</a></li>
+                        <li><a id="selected" href="#acerca">Acerca</a></li>
+                        <li><a id="selected" href="#servicios">Servicios</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+
+    <section id="inicio" name="home" class="container_home">
+            <div class="home">
+                <div class="text">
+                    <h1>SmartLife Corp</h1>
+                    <p>Siempre favoreciendo la investigació y la innovación en las diferentes soluciones y tecnologías destinadas al desarrollo de ciudades inteligentes.</p>
+                    <input id="acerca" type="button" value="Leer Mas">
+                </div>
+                <div class="imagen">
+                    <img src="src/img/smart-city.png" alt="">
+                </div>
+            </div>
+    </section>
+
+    <div class="wave">
+        <div style="height: 150px; overflow: hidden;" >
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>  
+    </div>
+    <section class="contenedor website">
+        <img src="src/img/City buildings_Isometric.svg" alt="">
+        <div class="contenedor-textos-main">
+            <h2 class="titulo right">Acerca de</h2>
+            <p class="parrafo">SmartLife es el proveedor de servicios públicos, tecnología y telecomunicaciones más experimentado y versátil del país para centros de convenciones, negocios, lugares de hospitalidad, unidades de viviendas múltiples y hogares residenciales.</p>
+            <p class="parrafo">SmartLife proporciona tecnologías que hacen de nuestras ciudades lugares más inteligentes para trabajar, vivir y jugar.</p>
+            <p class="parrafo">Hemos adaptado continuamente nuestros productos y servicios para estar a la vanguardia de la sofisticación cada vez mayor de nuestros clientes. Lo que no ha cambiado, y lo que nunca cambiará, son los valores fundamentales sobre los que nos fundamos. Estos valores se resumen en diez principios inmutables que guían nuestro negocio y nuestras relaciones. Nuestros valores fundacionales nunca cambiarán.
+            </p>
+        </div>
+    </section>
+
+    <section id="servicios" name="servicios" class="servicios">
+        <div class="contenedor">
+            <h2 class="titulo center">Servicios</h2>
+            <div class="content_cards">
+                <article class="card">
+                    <i class="fa fa-microchip"></i>
+                    <h3>Instalacion</h3>
+                    <p>Instalacion e incoporacion de microchip, software y/o sensores en diferentes tipos de sectores, coporativos, comercial, domestico e industrial.</p>
+                    <a href="" class="cta"></a>
+                </article>
+                <article class="card">
+                    <i class="fa fa-wifi" aria-hidden="true"></i>
+                    <h3>Acceso</h3>
+                    <p>Brindamos acceso por medios de nuestras API para monitorear cada sector.</p>
+                    <a href="" class="cta"></a>
+                </article>
+                <article class="card">
+                    <i class="fa fa-area-chart" aria-hidden="true"></i>
+                    <h3>Estudios</h3>
+                    <p>SmartLife cuenta con un equipo dedicado al sector urbanistico que te hara saber que necesitas para formar parte de una URBE Inteligente.</p>
+                    <a href="" class="cta"></a>
+                </article>
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="contacto" >
+        <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="src/img/logo.png" alt="">
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <a href="#inicio">Inicio</a>
+                        <a href="#acerca">Acerca</a>
+                        <a href="#servicios">Servicios</a>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <ul>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                    </ul>
+                </div>
+                <p>© 2022 SmartLife Corp, Inc.</p>
+        </div>
+    </footer>
+</body>
+</html>

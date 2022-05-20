@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    *margin-top: 40px;
+    position: fixed;
+    z-index: 1;
+    background: rgba(41, 40, 40, 0.24);
+    }
+
+.container_menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+}
+.logo img {
+    width: 100%;
+}
+.menu{
+    display: flex;
+    align-items: center;;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 10x;
+    text-transform: uppercase;
+}
+
+#selected{
+    background-color: rgb(41, 40, 40);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+.menu ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+.menu ul li a.active{
+    color: #000;
+}
+
+/* home */
+.container_home{
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(to right, #d299c2 0%, #fef9d7 100%);
+}
+
+.home{
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.container_home .text{
+    width: 500px;
+    color: rgb(255, 255, 255);
+    *text-shadow: #000 0px 0px 10px;
+    animation: mover-izquierda 1s ease-in;
+}
+
+.container_home .text p{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.container_home .text h1{
+    text-shadow: 1 0 2px rgb(39, 39, 39);
+    color: rgb(46, 46, 46);
+    font-size: 60px;
+    font-weight: 600;
+}
+
+@keyframes mover-izquierda {
+    0% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.container_home .text input{
+    padding: 18px 80px;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    margin-top: 40px;
+    background: rgb(41, 40, 40);    
+    color:#fff;
+    cursor: pointer;
+    box-shadow: 1px 1px 30px -12px rgb(34, 33, 33);
+    transition: all 300ms;
+}
+
+.container_home .text input:hover{
+    box-shadow: 1px 1px 30px -6px rgb(187, 102, 102);
+    transition: all 300ms;
+}
+
+.container_home .imagen img{
+    animation: move-vector 4s linear infinite;
+}
+
+@keyframes move-vector {
+    0% {
+        transform: translateY(15px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(15px);
+    }
+}
+
+.container_home .text p{
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.wave{
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to right, #d299c2 0%, #fef9d7 100%);
+}
+
+/* preloader */
+#preloader {
+    background: rgb(255, 255, 255) url(../img/smart-gif.gif) no-repeat center;
+    background-size: 40%; 
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* general */
+
+.contenedor,
+.wave-contenedor{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+    padding: 0 0 80px 0;
+
+}
+
+.contenedor{
+    padding: 80px 0px;
+}
+
+.titulo{
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    font-weight: bold;
+    color: rgb(180, 54, 54);
+}
+
+.titulo.left{
+    text-align: left;
+}
+
+.titulo.right{
+    text-align: right;
+}
+
+.titulo.center{
+    text-align: center;
+}
+
+/* Section */
+
+.website{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fondo{
+    background: rgb(207, 207, 207); 
+}
+.website img{
+    width: 55%;
+    animation: move-vector 4s linear infinite;
+}
+
+.website .contenedor-textos-main{
+    width: 50%;
+}
+
+.parrafo{
+    text-align: justify;
+    text-indent: 2em;
+    font-size: 18px;
+    margin-bottom: 10px;
+ 
+}
+
+/* servicios */
+
+.servicios{
+    background: linear-gradient(to right,#fef9d7 0%, #d299c2 50%, #fef9d7 100%);
+}
+
+.content_cards{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;    
+}
+
+.card{
+    width: 30%;
+    text-align: center;
+    height: 300px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 5);
+    border-radius: 50px 5px 50px 5px;
+    transform: scale(1);
+    transition: 0.2s;
+    background-color: rgba(255, 255, 255, 0.664);
+}
+
+.card:hover{
+    box-shadow: 0 1 15px 0 rgba(0, 0, 0, 0.281);
+    transform: scale(1.02);
+    cursor: pointer;
+
+}
+
+.card i{
+    margin: 30px 0 20px 0;
+    color: rgb(41, 40, 40);
+    font-size: 60px;
+    animation: moversegundos 1s ease-in-out infinite;
+}
+
+@keyframes moversegundos {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+    
+
+.card p{
+    margin: 10px 10px 10px 10px;
+    font-weight: 300;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* create a footer */
+footer{
+    position: relative;
+    background: rgb(41, 40, 40);
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .footer-social,
+footer .footer-menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .footer-menu li{
+    list-style: none;
+}
+
+footer .footer-social i{
+font-size: 2em;
+margin: 0 10px;
+color: #d299c2;
+display: inline-block;
+transition: 0.5s;
+}
+
+footer .footer-menu a{
+    font-size: 1em;
+    margin: 15px 15px;
+    color: #d299c2;
+    display: inline-block;
+    text-decoration: none;
+}
+
+footer .footer-menu a:hover{
+    opacity: 1;
+}
+
+footer .footer-social i:hover{  
+    transform: translateY(-10px);
+}
+
+footer p{
+    color: #d299c2;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
